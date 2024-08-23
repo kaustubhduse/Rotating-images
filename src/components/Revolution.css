@@ -1,0 +1,225 @@
+.solar-system {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.orbit-1,
+.orbit-2,
+.orbit-3,
+.orbit-4,
+.orbit-5,
+.orbit-6 {
+  border: 2px dashed lightgray; /* Use dashed lines */
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.orbit-1 {
+  width: 300px;
+  height: 300px;
+}
+
+.orbit-2 {
+  width: 500px;
+  height: 500px;
+}
+
+.orbit-3 {
+  width: 700px;
+  height: 700px;
+}
+
+.orbit-4 {
+  width: 900px;
+  height: 900px;
+}
+
+.orbit-5 {
+  width: 1100px;
+  height: 1100px;
+}
+
+.orbit-6 {
+  width: 1300px;
+  height: 1300px;
+}
+
+
+.orbit-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  animation: rotate 10s infinite linear;
+  z-index: 1;
+}
+
+.orbit-container img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center; /* Ensure images revolve around the container center */
+  /* Initial positioning and rotation applied in their specific CSS rules */
+}
+
+
+.orbit-2 img,
+.orbit-3 img,
+.orbit-4 img,
+.orbit-5 img{
+  width: 150px; /* Adjust image sizes */
+  height: 150px;
+  position: absolute;
+  transform: rotate(0deg);/* Orbit around the center of the orbit */
+}
+
+
+
+/* Position images at different angles and sizes */
+.orbit-2 img:nth-child(1) {
+  top: 50%;
+  left: 50%;
+  height: 250px;
+  width: 250px;
+  transform: translate(-50%, -50%) rotate(60deg) translateX(250px);
+}
+
+.orbit-2 img:nth-child(2) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(240deg) translateX(250px);
+}
+
+.orbit-3 img:nth-child(1) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg) translateX(350px);
+}
+
+.orbit-3 img:nth-child(2) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(120deg) translateX(350px);
+}
+
+.orbit-4 img:nth-child(1) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(30deg) translateX(450px);
+}
+
+.orbit-4 img:nth-child(2) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(150deg) translateX(450px);
+}
+
+.orbit-4 img:nth-child(3) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(270deg) translateX(450px);
+}
+
+.orbit-5 img:nth-child(1) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(315deg) translateX(550px);
+}
+
+.orbit-5 img:nth-child(2) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(210deg) translateX(550px);
+}
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .orbit-1 {
+    width: 200px;
+    height: 200px;
+  }
+
+  .orbit-2 {
+    width: 330px;
+    height: 330px;
+  }
+
+  .orbit-3 {
+    width: 500px;
+    height: 500px;
+  }
+
+  .orbit-4 {
+    width: 600px;
+    height: 600px;
+  }
+
+  .orbit-5 {
+    width: 700px;
+    height: 700px;
+  }
+
+  .orbit-6 {
+    width: 850px;
+    height: 850px;
+  }
+
+  .orbit-container img {
+    width: 100px; /* Adjust image sizes */
+    height: 100px;
+  }
+
+  .orbit-2 img:nth-child(1) {
+    height: 150px;
+    width: 150px;
+    transform: translate(-50%, -50%) rotate(60deg) translateX(150px);
+  }
+
+  .orbit-2 img:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(240deg) translateX(150px);
+  }
+
+  .orbit-3 img:nth-child(1) {
+    transform: translate(-50%, -50%) rotate(0deg) translateX(250px);
+  }
+
+  .orbit-3 img:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(120deg) translateX(250px);
+  }
+
+  .orbit-4 img:nth-child(1) {
+    transform: translate(-50%, -50%) rotate(30deg) translateX(300px);
+  }
+
+  .orbit-4 img:nth-child(2) {
+    transform: translate(-50%, -50%) rotate(150deg) translateX(300px);
+  }
+
+  .orbit-4 img:nth-child(3) {
+    transform: translate(-50%, -50%) rotate(270deg) translateX(300px);
+  }
+}
+
+.starttoday{
+  border-radius: 8px;
+  border: 1px solid rgba(208, 213, 221, 1);
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+
+}
