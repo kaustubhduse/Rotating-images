@@ -12,9 +12,9 @@ import o52 from "../assets/o52.png";
 
 function Revolution() {
   return (
-    <div className="solar-system mt-[10%]">
+    <div className="solar-system mt-[20%]">
       <div className="text-center justify-center items-center">
-        <h1 className="font-semibold text-5xl ">
+        <h1 className="font-semibold lg:text-5xl text-3xl ">
           We've really sped up our workflow
         </h1>
         <p className="mt-[4%]">

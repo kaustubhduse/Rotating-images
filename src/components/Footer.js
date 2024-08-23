@@ -28,11 +28,11 @@ function Footer() {
   return (
     <div
       ref={footerRef}
-      className={`flex justify-between p-10 mt-[45%] bg-black transition-opacity duration-500 ${
+      className={`lg:flex justify-between p-10 mt-[45%] bg-black transition-opacity duration-500 ${
         isVisible ? "opacity-100" : "opacity-50"
       }`}
     >
-      <div className="w-[40%]">
+      <div className="lg:w-[40%] ">
         <h1 className="font-bold text-3xl text-white">Real time changes</h1>
         <p className="mt-[5%] text-white">
           See changes as they happen. With our platform, you can track every
@@ -43,7 +43,7 @@ function Footer() {
         <h1 className="text-white">Version Control</h1>
       </div>
       <div>
-        <img src={colorful} alt="colorful" />
+        <img src={colorful} className="mt-[5%]" alt="colorful " />
       </div>
     </div>
   );
